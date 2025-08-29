@@ -1,0 +1,133 @@
+Requerimientos funcionales de la base de datos
+
+1. Clientes
+Debe almacenarse la información básica de cada cliente:
+
+Cédula (ID del cliente)
+
+Nombre completo
+
+Teléfono u otro método de contacto
+
+2. Productos
+El sistema debe permitir llevar un control de inventario, registrando:
+
+ID del producto
+
+Nombre o descripción
+
+Stock disponible
+
+Precio unitario
+
+Categoría del producto (para facilitar la búsqueda y organización)
+
+Imagen del producto (puede almacenarse como ruta/URL en la base de datos o gestionarse externamente mediante un sistema de archivos)
+
+3. Categorías de productos
+Es necesario dividir los productos en categorías para facilitar su búsqueda y gestión.
+
+ID categoria
+Nombre de categoria
+
+¿Diseñar subcategorias?
+
+4. Ventas
+Se debe mantener un historial de las ventas realizadas, incluyendo:
+
+ID de la venta
+
+Cliente que realizó la compra
+
+Fecha
+
+Método de pago utilizado
+
+Costo total de la venta
+
+Cantidad de productos vendidos
+
+(Más adelante debe asociarse también con el trabajador que atendió la venta)
+
+5. Servicios técnicos
+El sistema debe registrar todos los servicios de mantenimiento, incluyendo:
+
+ID del servicio
+
+Nombre del equipo/dispositivo
+
+Cliente asociado
+
+Fecha de recepción del equipo
+
+Fecha de entrega estimada
+
+Descripción de los trabajos o requerimientos solicitados
+
+Costo total del servicio
+
+Tiempo de garantía asignado
+
+6. Trabajadores
+Debe gestionarse la información del personal que atiende ventas y realiza servicios:
+
+Cédula (ID del trabajador)
+
+Nombre
+
+Teléfono
+
+Registro de las ventas atendidas y/o servicios realizados por cada trabajador
+
+Salario
+
+7. Facturación
+El sistema debe permitir generar una factura que pueda combinar:
+
+Productos vendidos (ventas)
+
+Servicios realizados
+
+Costo total consolidado
+
+8. Proveedores
+Debe mantenerse un registro de los proveedores:
+
+RUT o NIT
+
+Nombre del proveedor
+
+Teléfono o método de contacto
+
+9. Préstamos o ventas/servicios a crédito
+Se debe contemplar una forma de manejar ventas o servicios que se realizan a crédito. Se podrían plantear dos alternativas:
+
+Opción A: crear una entidad independiente llamada Préstamo, que incluya:
+
+ID del préstamo
+
+Cliente
+
+Tipo de operación (venta o servicio)
+
+Monto pendiente de pago
+
+Estado del préstamo (pendiente / pagado)
+
+Opción B: añadir a las entidades Venta y Servicio un atributo llamado estado_transacción con valores como pagado / pendiente.
+
+Opcion C: Añadir a la entidad transaccion estado_transaccion para definir si ya fue pagado la transaccion si esta pendiente o si se cancelo
+
+10. Seguimiento del ingreso de dinero
+Debe existir una forma de saber si el valor de una venta o servicio fue recibido en caja o aún se encuentra en la cuenta bancaria (por ejemplo, un atributo que indique origen del pago o estado de transferencia).
+
+11. Manejo de gastos
+Que se puedan agregar gastos, el monto del gasto, la fecha, y un ID
+
+12. Requerimientos especificos
+id_requerimiento, especificacion requerimiento, estado_requerimiento
+
+13. servicios generales
+Pueden ser una lista de servicios generales que ofrezca el local
+idServicio, detalleServicio, precioServicio
+

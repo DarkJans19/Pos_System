@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.2">
   <diagram name="Page-1" id="zgw_A6y4yyY5CjzMuygt">
-    <mxGraphModel dx="3189" dy="1910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2742" dy="1667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -904,11 +904,23 @@
         <mxCell id="Ze6VdnWMHU36lZnTAr8V-38" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;idPrestamo&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="110" y="-870" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="pnJHU0jqAIHaIWf9U9RF-1" value="En este caso no quedan guardados los prestamos de manera individual, sino que estan asignados a una transaccion en especifico, por eso una entidad debil&lt;div&gt;Lo podria manejar como una entidad fuerte si manejara los prestamos de otra manera pero no es algo necesario&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="pnJHU0jqAIHaIWf9U9RF-1" value="En este caso no quedan guardados los prestamos de manera individual, sino que estan asignados a una transaccion en especifico, por eso una entidad debil&lt;div&gt;Lo podria manejar como una entidad fuerte si manejara los prestamos de otra manera pero no es algo necesario&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="370" y="-845" width="385" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pnJHU0jqAIHaIWf9U9RF-2" value="Servicios Fijos que pueden ser servicios comunes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="pnJHU0jqAIHaIWf9U9RF-2" value="Servicios Fijos que pueden ser servicios comunes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1890" y="-60" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YsO0cA5pMwfEjuUMD-6m-1" value="estadoPublicacionProducto" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-735" y="460" width="155" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YsO0cA5pMwfEjuUMD-6m-2" value="No publicado, publicado o en proceso" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="510" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YsO0cA5pMwfEjuUMD-6m-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="YsO0cA5pMwfEjuUMD-6m-1" target="0GXXYNYTDOD7YE1xnGTW-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-610" y="410" as="sourcePoint" />
+            <mxPoint x="-450" y="410" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
